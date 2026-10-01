@@ -1,0 +1,34 @@
+body{font-family:Arial, sans-serif;}
+.chat-body{
+    height:300px;
+    overflow-y:auto;
+    padding:10px;
+    background:#f8f9fa;
+    border-radius:5px;
+}
+.alert{
+    border-radius:15px;
+    padding:8px;
+    margin:2px;
+}
+#chat-toggle{
+    position:fixed; bottom:20px; right:20px;
+    width:60px; height:60px;
+    font-size:28px;
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer; z-index:9999;
+}
+#chat-widget{
+    position:fixed; bottom:20px; right:20px;
+    width:350px; max-width:90%;
+    border-radius:10px; z-index:9998;
+    display:flex; flex-direction:column;
+}
+#chat-widget .card-footer{padding:0.5rem;}
+#chat-badge{
+    font-size:0.7rem; padding:3px 6px;
+}
+#typing .alert{
+    font-style: italic;
+    opacity: 0.7;
+}
